@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/booking_konfirmasi"
+    tools:context=".Nav_Profil">
+
+    <!-- TextView untuk menampilkan data -->
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="280dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomor_hp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintTop_toBottomOf="@id/nama" />
+
+    <!-- TextView untuk kembali -->
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintTop_toBottomOf="@id/nomor_hp" />
+
+    <TextView
+        android:id="@+id/capster"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintTop_toBottomOf="@id/capster" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
